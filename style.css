@@ -36,6 +36,9 @@ img{
     width: 30%;
     /* height: 100vh; */
     position: relative;
+}
+
+.left_bar-box{
     padding: 4rem;
 }
 
@@ -59,10 +62,9 @@ img{
 }
 
 .left_bar-art{
-    position: absolute;
     width: 45%;
-    bottom: 0;
-    left: 0;
+    margin-top: 6rem;
+    
 }
 
 
@@ -221,18 +223,29 @@ select{
         flex-direction: column-reverse;
     }
 
+    .form_box{
+        padding: 2.5rem;
+    }
+
     .left_bar, .form_box{
         width: 100%;
     }
     input, select{
-        width: 90%;     
+        width: 100%;     
      }
      .date{
-        width: 90%;
+        width: 100%;
     }
+
+    .btn{
+        margin: 4rem auto 0 auto;
+        display: block;
+    }
+
+    
     .text_block{
         margin-top: 5.5rem;
-        padding-left: 5rem;
+        /* padding-left: 5rem; */
     }
     .left_bar-header{
         font-size: 2rem;
@@ -241,5 +254,11 @@ select{
     .left_bar-text{
         font-size: 1.3rem;
         font-weight: 400;
+    }
+
+    .left_bar-art{
+        width: 40%;
+        margin-top: 1rem;
+
     }
   }
