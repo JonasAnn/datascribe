@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.main{
+    display: flex;
+}
+
+
+.left_bar{
+    background-color: #202731;
+    color: #FAF6F6;
+    width: 30%;
+    /* height: 100vh; */
+    position: relative;
+    padding: 4rem;
+}
+
+.logo{
+    width: 70%;
+    margin: auto;
+}
+
+
+.text_block{
+    margin-top: 5.5rem;
+    padding-left: 5rem;
+}
+.left_bar-header{
+    font-size: 2.7rem;
+    padding-bottom: .5rem;
+}
+.left_bar-text{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.left_bar-art{
+    position: absolute;
+    width: 45%;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* styling for form */
+.form_box{
+    /* height: 100vh; */
+    width: 70%;
+    padding: 5rem;
+}
+
+.form_header{
+    font-size: 2.5rem;
+}
+
+.form_paragraph{
+    font-size: 1.5rem;
+    padding-top: .3rem;
+}
+
+label{
+    display: block;
+    margin: 2rem 0;
+}
+
+input, select{
+   background: rgba(196, 196, 196, 0.26);
+   border-radius: 10px;
+   width: 60%;
+   border: none;
+   padding: 1.6rem 2.5rem;
+
+}
+
+input::placeholder,
+select{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(32, 39, 49, 0.8);
+    
+}
+
+
+
+#no-block{
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 .5rem;
+    font-size: 1.6rem;
+    /* font-weight: 500; */
+}
+
+.radio_option {
+    /* background-color: red; */
+    margin: 2rem 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.radio_option p{
+    font-size: 1.3rem;
+    width: 45%;
+}
+
+#yes, #no{
+    width: auto;
+    margin: 0 0 0 1rem;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.date p, .radio_option p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#date{
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.btn{
+    background: #D90B1C;
+    border-radius: 10px;
+    color: #FAF6F6;
+    padding: 1.5rem 4.5rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* display: block; */
+    cursor: pointer;
+    margin: 4rem 0 0 16rem;
+}
+
+
+.thank_section{
+    text-align: center;
+    background: #E5E5E5;
+    height: 100vh;
+    padding: 30vh 0 0 0;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+.thank_header{
+    font-size: 2.8rem;
+    margin: 1rem 0 ;    
+}
+
+.t-btn{
+    margin: 4rem 0 0 0;
+    
+    /* display: inline; */
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* html{
+        font-size: 12px;
+    }
+    .donate_text{
+        font-size: 8rem;
+    } */
+  }
+
+  @media screen and (max-width: 800px) {
+    input, select{
+        width: 80%;     
+     }
+
+     .radio_option {
+         width: 80%;
+     }
+     .radio_option p{
+        width: 60%;
+    }
+
+    .date{
+        width: 80%;
+    }
+    .btn{
+        margin: 3rem 0 0 8rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    /* html{
+        font-size: 9px;
+    } */
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    .left_bar, .form_box{
+        width: 100%;
+    }
+    input, select{
+        width: 90%;     
+     }
+     .date{
+        width: 90%;
+    }
+    .text_block{
+        margin-top: 5.5rem;
+        padding-left: 5rem;
+    }
+    .left_bar-header{
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+    .left_bar-text{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+  }
