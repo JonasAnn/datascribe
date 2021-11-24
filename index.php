@@ -8,7 +8,7 @@
         $experience = $_POST['experience'];
         $dob = $_POST['date'];
 
-        $to = "ogbuknonso@gmail.com";
+        $to = "armstrongdeedie@gmail.com";
         $subject = "New Transcriber Registration";
 
         $message = "
